@@ -8,7 +8,7 @@
     "pretest": "npm run build",
     "test": "mocha",
     "coverage": "istanbul cover _mocha --",
-    "postcoverage": "node scripts/map-coverage"
+    "postcoverage": "if [ -f coverage/lcov.info ]; then node scripts/map-coverage; fi"
   },
   "author": "Louay Alakkad <louay@alakkad.me>",
   "license": "LGPL-3.0",

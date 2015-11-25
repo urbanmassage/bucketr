@@ -15,4 +15,4 @@ test:
   override:
     - npm run coverage
   post:
-    - cat ./coverage/lcov-mapped.info | ./node_modules/codecov.io/bin/codecov.io.js
+    - if [ -f coverage/lcov.info ]; then cat ./coverage/lcov-mapped.info | ./node_modules/codecov.io/bin/codecov.io.js; fi
