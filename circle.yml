@@ -1,0 +1,18 @@
+general:
+  artifacts:
+    - "coverage"
+
+dependencies:
+  cache_directories:
+    - "node_modules"
+  override:
+    - npm install
+    - npm prune
+
+test:
+  pre:
+    - npm run build
+  override:
+    - npm run coverage
+  post:
+    - cat ./coverage/lcov-mapped.info | ./node_modules/codecov.io/bin/codecov.io.js
