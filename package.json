@@ -1,6 +1,6 @@
 {
   "name": "bucketr",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Easy object state management",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,9 @@
     "debug": "^2.2.0"
   },
   "keywords": [],
-  "typings": "index.d.ts",
+  "typescript": {
+    "definition": "index.d.ts"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/urbanmassage/bucketr.git"
