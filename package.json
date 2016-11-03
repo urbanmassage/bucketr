@@ -19,7 +19,7 @@
     "map-coverage": "0.0.3",
     "mocha": "^3.0.0",
     "tsd": "^0.6.5",
-    "typescript": "^1.7.5"
+    "typescript": "^2.0.7"
   },
   "directories": {
     "test": "test"
